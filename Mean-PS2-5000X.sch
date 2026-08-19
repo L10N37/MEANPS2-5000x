@@ -1,0 +1,88 @@
+EESchema Schematic File Version 4
+LIBS:Mean-PS2-5000X-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+Sheet 1 1
+Title "Mean-PS2 SCPH-5000X Power Board"
+Date "2026-08-19"
+Rev "0.2 mechanical draft"
+Comp "Mean-PS2"
+Comment1 "Donor connectors and T2AH/250V fuse holder"
+Comment2 "Universal IRM-45-12 / IRM-60-12 footprint"
+$EndDescr
+$Comp
+L AC_INPUT_2 J1
+U 1 1 5A000001
+P 1500 2100
+F 0 "J1" H 1500 2350 50  0000 C CNN
+F 1 "DONOR AC INPUT" H 1500 1850 50 0000 C CNN
+F 2 "Mean-PS2:Sony_AC_Input_2Pin_8.5mm" H 1500 2100 50 0001 C CNN
+	1    1500 2100
+	1 0 0 -1
+$EndComp
+$Comp
+L DONOR_FUSE F1
+U 1 1 5A000002
+P 3000 2050
+F 0 "F1" H 3000 2200 50 0000 C CNN
+F 1 "T2AH/250V" H 3000 1900 50 0000 C CNN
+F 2 "Mean-PS2:Sony_Fuseholder_5x20_4Pin" H 3000 2050 50 0001 C CNN
+	1    3000 2050
+	1 0 0 -1
+$EndComp
+$Comp
+L IRM_45_60 U1
+U 1 1 5A000003
+P 5000 2200
+F 0 "U1" H 5000 2550 50 0000 C CNN
+F 1 "IRM-45-12 / IRM-60-12" H 5000 1850 50 0000 C CNN
+F 2 "Mean-PS2:IRM-45_60_PCB" H 5000 2200 50 0001 C CNN
+	1    5000 2200
+	1 0 0 -1
+$EndComp
+$Comp
+L PS2_OUTPUT_4 J2
+U 1 1 5A000004
+P 6500 2200
+F 0 "J2" H 6500 2550 50 0000 C CNN
+F 1 "DONOR PS2 12V OUTPUT" H 6500 1850 50 0000 C CNN
+F 2 "Mean-PS2:Sony_PS2_Output_4Pin_20mm" H 6500 2200 50 0001 C CNN
+	1    6500 2200
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	1800 2050 2700 2050
+Wire Wire Line
+	3300 2050 4500 2050
+Wire Wire Line
+	1800 2150 4000 2150
+Wire Wire Line
+	4000 2150 4000 2350
+Wire Wire Line
+	4000 2350 4500 2350
+Wire Wire Line
+	5500 2050 6200 2050
+Wire Wire Line
+	6100 2050 6100 2150
+Wire Wire Line
+	6100 2150 6200 2150
+Wire Wire Line
+	5500 2350 6200 2350
+Wire Wire Line
+	6100 2350 6100 2250
+Wire Wire Line
+	6100 2250 6200 2250
+Text Label 2050 2050 0 50 ~ 0
+AC_L_IN
+Text Label 3650 2050 0 50 ~ 0
+AC_L_FUSED
+Text Label 2350 2150 0 50 ~ 0
+AC_N
+Text Label 5750 2050 0 50 ~ 0
++12V
+Text Label 5750 2350 0 50 ~ 0
+GND
+Text Notes 1200 3000 0 75 ~ 12
+DANGER: MAINS VOLTAGE. Verify footprint, fuse condition, isolation clearances and 1:1 mechanical fit before assembly.
+$EndSCHEMATC

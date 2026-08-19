@@ -1,0 +1,15 @@
+(footprint "MountingHole_4.5mm_NPTH" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (descr "4.5 mm non-plated mounting hole with 2 mm copper courtyard clearance")
+  (attr exclude_from_pos_files exclude_from_bom)
+    (fp_text reference "H" (at 0 -4) (layer "F.SilkS") hide
+      (effects (font (size 0.9 0.9) (thickness 0.15)))
+      (tstamp 55cc6f92-ddf4-5362-a2f8-2e4795381749)
+    )
+    (fp_text value "MOUNTING HOLE 4.5" (at 0 4) (layer "F.SilkS") hide
+      (effects (font (size 0.8 0.8) (thickness 0.15)))
+      (tstamp be8f2545-9049-547c-84b2-0bfa1b616743)
+    )
+    (fp_circle (center 0 0) (end 3.25 0) (stroke (width 0.25) (type default)) (fill none) (layer "F.SilkS") (tstamp 3c9d266c-3a65-5c01-ba8c-380d2a6f1548))
+    (pad "" np_thru_hole circle (at 0 0) (size 4.5 4.5) (drill 4.5) (layers "*.Cu" "*.Mask") (tstamp 177884b7-fd8b-53b1-9f88-60d5c5deeb38))
+)

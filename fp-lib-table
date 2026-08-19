@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Mean-PS2")(type "KiCad")(uri "${KIPRJMOD}/Mean-PS2.pretty")(options "")(descr "Mean-PS2 donor and module footprints"))
+)
